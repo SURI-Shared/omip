@@ -37,7 +37,7 @@ else()
     message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
-find_package(Boost REQUIRED COMPONENTS signals thread filesystem)
+find_package(Boost REQUIRED COMPONENTS thread filesystem)
 find_package(bfl REQUIRED)
 find_package(OpenCV REQUIRED COMPONENTS highgui)
 

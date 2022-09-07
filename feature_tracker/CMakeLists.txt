@@ -24,7 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
   rosbag
 )
 
-find_package(Boost REQUIRED COMPONENTS signals thread)
+find_package(Boost REQUIRED COMPONENTS thread)
 find_package(OpenCV REQUIRED COMPONENTS video)
 
 generate_dynamic_reconfigure_options(

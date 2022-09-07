@@ -24,7 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(bfl REQUIRED)
-find_package(Boost REQUIRED COMPONENTS signals thread)
+find_package(Boost REQUIRED COMPONENTS thread)
 
 add_service_files(FILES publish_urdf.srv)
 generate_messages(

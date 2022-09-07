@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(bfl REQUIRED)
-find_package(Boost REQUIRED COMPONENTS signals thread)
+find_package(Boost REQUIRED COMPONENTS thread)
 
 generate_dynamic_reconfigure_options(
   cfg/RBTrackerDynReconf.cfg
