@@ -1,5 +1,6 @@
-# generated from catkin/cmake/template/pkgConfig.cmake.in
+message(STATUS "INFO: looking for bfl")
 
+# generated from catkin/cmake/template/pkgConfig.cmake.in
 # append elements to a list if they are not already in the list
 # copied from catkin/cmake/list_append_unique.cmake to keep pkgConfig
 # self contained
@@ -66,7 +67,7 @@ if("FALSE" STREQUAL "TRUE")
 else()
   set(bfl_SOURCE_PREFIX "")
   set(bfl_DEVEL_PREFIX "")
-  set(bfl_INSTALL_PREFIX /home/roberto/Libraries/bfl)
+  set(bfl_INSTALL_PREFIX /usr/include/bfl)
   set(bfl_PREFIX ${bfl_INSTALL_PREFIX})
 endif()
 
@@ -81,11 +82,12 @@ if(NOT "" STREQUAL "")
 endif()
 
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
-set(bfl_FOUND_CATKIN_PROJECT TRUE)
+set(bfl_FOUND_CATKIN_PROJECT FALSE)
 
-set(bfl_INCLUDE_DIRS $ENV{ROS_ROOT}/../../include/bfl)
-set(bfl_LIBRARIES_DIRS $ENV{ROS_ROOT}/../../lib)
+set(bfl_INCLUDE_DIRS /usr/include/bfl)
+set(bfl_LIBRARIES_DIRS /usr/lib/x86_64-linux-gnu)
 set(bfl_LIBRARIES ${bfl_LIBRARIES_DIRS}/liborocos-bfl.so)
+message(STATUS "INFO: set custom bfl include and library locations")
 
 set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
